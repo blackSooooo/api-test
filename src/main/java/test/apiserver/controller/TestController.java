@@ -17,7 +17,9 @@ public class TestController {
     }
 
     @GetMapping("/test")
-    public List<Routing> test() throws Exception{
+    public List<Routing> test() {
         return testRepository.findAll();
     }
+
 }
+
